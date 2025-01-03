@@ -4,13 +4,25 @@ import { InputBox } from "./components/index.js";
 
 function App() {
   
+  // hook for updating amount value
   const [amount, setAmount] = useState(0);
+ 
+  // hook for updating currency type value
   const [from, setFrom] = useState("usd");
+ 
+  // hook for updating currency type value from a specified value
   const [to, setTo] = useState("inr");
+ 
+  //hook for setting converted amount
   const [convertedAmount, setConvertedAmount] = useState(0);
+ 
+  //hook for retreiving data from api
   const currencyInfo = useCurrencyInfo(from);
+ 
+  //hook for getting keys from api
   const options = Object.keys(currencyInfo);
 
+  
   const swap = () => {
     setFrom(to);
     setTo(from);
@@ -37,6 +49,7 @@ function App() {
             }}
           >
             <div className="w-full mb-1">
+          
               <InputBox
                 label="from"
                 amount={amount}

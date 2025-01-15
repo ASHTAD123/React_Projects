@@ -6,6 +6,9 @@ import FirstComponent from './Components/FirstComponent.jsx'
 import SecondComponent from './Components/SecondComponent.jsx'
 import ThirdComponent from './Components/ThirdComponent.jsx'
 import SearchForm from './Components/SearchForm.jsx'
+import MyProfile from './Components/MyProfile.jsx'
+import Gallery from './Components/Interactivity.jsx'
+import {sculptureList} from './Components/data.js'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -13,6 +16,8 @@ createRoot(document.getElementById('root')).render(
     {/* <FirstComponent />
     <SecondComponent />
     <ThirdComponent/> */}
-    <SearchForm/>
+    {/* <SearchForm/> */}
+    {/* <MyProfile/> */}
+    <Gallery/>
   </StrictMode>,
 )

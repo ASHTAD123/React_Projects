@@ -13,10 +13,10 @@ function FriendsCategoryRow({category}){
 
 
 function FriendsRow({friend}){
-
+    const name1 = friend.name;
     return(
         <tr>
-            <td>{friend.name}</td>
+            <td>{name1}</td>
             <td>{friend.category}</td>
             <td>{friend.age}</td>
             <td>{friend.birthday}</td>
@@ -39,8 +39,8 @@ function FriendsTable({friends}){
 
         rows.push(
             <FriendsRow
-            friends={friends}
-            key={friends.name}/>
+            friends={friend}
+            key={friend.name}/>
         );
 });
 
@@ -85,7 +85,7 @@ function FilterableFriendsTable({friends}){
 }
 
 
-const FRIENDS =[
+const FRIENDS = [
     {category:"CloseFriends" ,name:"Shinchan" ,age:"25", birthday:"24th Nov"},
     {category:"CloseFriends" ,name:"Kajal" ,age:"25", birthday:"20th Nov"},
     {category:"CloseFriends" ,name:"Piyu" ,age:"25", birthday:"24th March"},
@@ -93,6 +93,6 @@ const FRIENDS =[
 ];
 
 export default function SearchForm() {
-    return <FRIENDS friends={FRIENDS}/>;
+    return <FilterableFriendsTable friends={FRIENDS}/>;
 }
 

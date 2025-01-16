@@ -34,7 +34,7 @@ export default function Gallery() {
 
       <h2>
         <i> {sculpture.name} </i>
-        by {sculpture.artists}
+        by {sculpture.artist}
       </h2>
 
       <h3>

@@ -32,25 +32,25 @@ function FirstComponent(){
     }
 
     return(
-   
-   <div>
-    
-    <center>
-        <h1> 1st Component </h1>
-        <h2> Below is the button imported from App Component</h2>
-        <MyButton/>
-        <h3> Name import from App component : {name}</h3>
-    </center>
+        
+        <div>
+            
+            <center>
+                <h1> 1st Component </h1>
+                <h2> Below is the button imported from App Component</h2>
+                <MyButton/>
+                <h3> Name import from App component : {name}</h3>
+            </center>
 
-            <li>
-                <h3>Here we are using Conditional Rendering</h3>
-                {listOfNames}
-            </li>
+                    <li>
+                        <h3>Here we are using Conditional Rendering</h3>
+                        {listOfNames}
+                    </li>
 
-            <button onClick={handleClick}>Click Me</button>
-    
-            <h2> Clicked {count} times</h2>
-    </div>
+                    <button onClick={handleClick}>Click Me</button>
+            
+                    <h2> Clicked {count} times</h2>
+            </div>
 );
 
 }

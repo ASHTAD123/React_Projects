@@ -13,11 +13,17 @@ import {sculptureList} from './Components/data.js'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <App /> */}
-    {/* <FirstComponent />
+   
+    /* <FirstComponent />*/
+    
     <SecondComponent />
-    <ThirdComponent/> */}
-    {/* <SearchForm/> */}
+   
+  <ThirdComponent/> 
+    
+     {/* <SearchForm/>   incomplete */}
+    
     {/* <MyProfile/> */}
-    <Gallery/>
+   
+    {/* <Gallery/> */}
   </StrictMode>,
 )

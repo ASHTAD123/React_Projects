@@ -2,8 +2,9 @@ export default function Button() {
  
     function handleClick() {
     alert("Opps sorry ...You caught me!");
-  }
-  return (
+}
+
+return (
     <div>
       
       <button onClick={handleClick}>I dont'do anything</button>
@@ -13,14 +14,12 @@ export default function Button() {
       <button
         onClick={function handleClick() {
           alert("2nd button");
-        }}
-      >2nd button</button>
+        }} >2nd button</button>
 
-      <button onClick={()=>{
+    
+      <button onClick={ ()=>{
              alert("3rd button");
-      } }>
-
-      3rd button</button>
+        }}>3rd button</button>
    
     </div>
   );

@@ -10,8 +10,8 @@ import MyProfile from './Components/MyProfile.jsx'
 import Gallery from './Components/Interactivity.jsx'
 import {sculptureList} from './Components/data.js'
 import PassObjectsJSX from './Components/PassObjectsJSX.jsx'
-import ComponentOne from './Components/PassingProps.jsx'
-
+import ComponentOne from './Components/PassingProps_01.jsx'
+import PassingProps_02 from './Components/PassingProps_02.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -32,6 +32,8 @@ createRoot(document.getElementById('root')).render(
 
   {/* <PassObjectsJSX/> */}
 
-  <ComponentOne/>
+  {/* <ComponentOne/> */}
+
+  <PassingProps_02/>
   </StrictMode>,
 )

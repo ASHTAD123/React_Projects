@@ -1,25 +1,23 @@
-import { useState } from 'react';
-import { sculptureList } from './data.js';
+import { useState } from "react";
+import { sculptureList } from "./data.js";
 
-export default function Gallery() {
-  
+export function handleNextClick() {
   //for looping through the images
   const [index, setIndex] = useState(0);
-
-  const [showMore, setShowMore] = useState(false);
 
   //pointer which checks if we reach end of list
   //imagine it as a index
   const hasNext = index < sculptureList.length - 1;
 
-
-  function handleNextClick() {
-    if (hasNext) {
-      setIndex(index + 1);
-    } else {
-      setIndex(0);
-    }
+  if (hasNext) {
+    setIndex(index + 1);
+  } else {
+    setIndex(0);
   }
+}
+
+export default function Gallery({index}) {
+  const [showMore, setShowMore] = useState(false);
 
   function handleMoreClick() {
     setShowMore(!showMore);

@@ -6,6 +6,7 @@ export default function MyButton() {
   
   function handleClick(){
     console.log("Button Clicked");
+    alert(" You are such a useless creature !!")
   }
 
   return(

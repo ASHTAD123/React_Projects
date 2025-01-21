@@ -14,6 +14,8 @@ import ComponentOne from "./Components/PassingProps_01.jsx";
 import PassingProps_02 from "./Components/PassingProps_02.jsx";
 import PackingList from "./Components/ConditionalRendering_01.jsx";
 import DrinkList from "./Components/ConditionalRendering_02.jsx";
+import RenderList from './Components/RenderingLists_01.jsx'
+import RenderList_02 from "./Components/RenderingLists_02.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -28,6 +30,8 @@ createRoot(document.getElementById("root")).render(
     {/* <ComponentOne/> */}
     {/* <PassingProps_02/> */}
     {/* <PackingList/> */}
-    <DrinkList />
+    {/* <DrinkList /> */}
+    {/* <RenderList/> */}
+    <RenderList_02/>
   </StrictMode>
 );

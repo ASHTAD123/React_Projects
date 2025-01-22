@@ -8,7 +8,7 @@ const {user} = useContext(UserContext)
 if(!user) return <h2> Not Logged in</h2>
 
 return (
-    <div>Profile :{ user.}</div>
+    <div>Profile :{ user}</div>
   )
 
 }

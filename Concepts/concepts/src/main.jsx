@@ -16,6 +16,7 @@ import PackingList from "./Components/ConditionalRendering_01.jsx";
 import DrinkList from "./Components/ConditionalRendering_02.jsx";
 import RenderList from './Components/RenderingLists_01.jsx'
 import RenderList_02 from "./Components/RenderingLists_02.jsx";
+import  UpdateArrayState  from "./Components/UpdateArraysInState.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -32,6 +33,7 @@ createRoot(document.getElementById("root")).render(
     {/* <PackingList/> */}
     {/* <DrinkList /> */}
     {/* <RenderList/> */}
-    <RenderList_02/>
+    {/* <RenderList_02/> */}
+    <UpdateArrayState/>
   </StrictMode>
 );
